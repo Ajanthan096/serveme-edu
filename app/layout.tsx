@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Lexend, Noto_Sans } from "next/font/google";
 import "./globals.css";
+import { ClerkProvider } from '@clerk/nextjs'
 import { ThemeProvider } from "@/components/theme-provider";
 
 const lexend = Lexend({
@@ -31,7 +32,7 @@ export default function RootLayout({
       <body
         className={`${lexend.variable} ${notoSans.variable} font-display antialiased`}
       >
-        <ThemeProvider
+             <ThemeProvider
           attribute="class"
           defaultTheme="light"
           enableSystem
@@ -39,6 +40,8 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
+          
+       
       </body>
     </html>
   );

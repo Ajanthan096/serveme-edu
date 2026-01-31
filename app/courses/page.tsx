@@ -324,7 +324,7 @@ export default function CoursesPage() {
       <Header />
 
       <main className="flex-1 py-5 px-4 md:px-8 lg:px-20 xl:px-40">
-        <div className="w-full max-w-[1280px] mx-auto flex flex-col gap-6">
+        <div className="w-full max-w-7xl mx-auto flex flex-col gap-6">
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 text-sm">
             <Link href="/" className="text-primary font-medium hover:underline">
@@ -335,7 +335,7 @@ export default function CoursesPage() {
           </div>
 
           {/* Hero Banner */}
-          <div className="min-h-[320px] flex flex-col gap-6 rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 p-8 items-start justify-end shadow-lg relative overflow-hidden">
+          <div className="min-h-[80] flex flex-col gap-6 rounded-xl bg-linear-to-br from-slate-900 to-slate-800 p-8 items-start justify-end shadow-lg relative overflow-hidden">
             <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173')] bg-cover bg-center opacity-20" />
             <div className="relative z-10 flex flex-col gap-2 max-w-2xl">
               <span className="w-fit rounded-full bg-secondary/90 px-3 py-1 text-xs font-bold text-white uppercase tracking-wider">

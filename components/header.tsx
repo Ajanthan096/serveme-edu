@@ -2,9 +2,8 @@
 
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Menu, School, Languages } from "lucide-react";
+import { Menu } from "lucide-react";
 import { useState } from "react";
-import Image from "next/image";
 
 export function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,13 +36,13 @@ export function Header() {
                                 Courses
                             </Link>
                             <Link
-                                href="#teachers"
+                                href="/teachers"
                                 className="text-sm font-medium hover:text-primary transition-colors"
                             >
                                 Teachers
                             </Link>
                             <Link
-                                href="#about"
+                                href="/about"
                                 className="text-sm font-medium hover:text-primary transition-colors"
                             >
                                 About Us
@@ -62,9 +61,7 @@ export function Header() {
                             <Button variant="outline" asChild>
                                 <Link href="/auth">Login</Link>
                             </Button>
-                            <Button variant="outline" size="icon">
-                                <Languages className="h-5 w-5" />
-                            </Button>
+                            
                         </div>
                     </nav>
 
